@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import Home from './views/home';
 import Profile from './views/profile';
+import AddPost from './views/addPost';
 
 function App() {
   const [data, setData] = useState('')
@@ -24,6 +25,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/profile' component={Profile} />
+        <Route path='/addPost' component={AddPost} />
       </Switch>
     </Router>
   );
